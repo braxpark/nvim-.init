@@ -8,7 +8,6 @@ set title
 set nowrap
 set background=dark
 set termguicolors
-set cursorline
 
 call plug#begin()
 Plug 'https://github.com/evanleck/vim-svelte'
@@ -22,11 +21,11 @@ Plug 'https://github.com/bfrg/vim-cpp-modern'
 Plug 'https://github.com/CreaturePhil/vim-handmade-hero'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+Plug 'bluz71/vim-moonfly-colors'
+Plug 'preservim/vim-colors-pencil'
 call plug#end()
 
 let g:python_highlight_all = 1
 let g:cpp_member_highlight = 1
 
-colorscheme lucid
-hi clear CursorLine
-hi CursorLine gui=underline cterm=underline
+colorscheme pencil
